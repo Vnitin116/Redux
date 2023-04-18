@@ -1,8 +1,14 @@
 import { Add_To_Cart } from "./Constant";
-function addTOCart(item) {
+import { Remove_From_Cart } from "./Constant";
+export const addTOCart = (item) => {
     return {
         type: Add_To_Cart,
         data: item
     }
 }
-export default addTOCart;
+export const removeFromCart = (item) => {
+    return {
+        type: Remove_From_Cart,
+        data: item
+    }
+}

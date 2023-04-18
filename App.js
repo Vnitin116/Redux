@@ -29,7 +29,7 @@ const App = () => {
         },
     ]
     return (
-        <Provider store={store}>
+        <Provider store={store} >
             <View>
                 <Header />
                 <ScrollView>
@@ -38,6 +38,7 @@ const App = () => {
                 </ScrollView>
             </View>
         </Provider>
+
     )
 }
 export default App
